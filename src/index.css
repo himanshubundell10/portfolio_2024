@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  @apply transition-colors duration-100
+}
+
+body {
+  font-family: poppins, ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  overflow-y: auto;
+  overflow-x: hidden;
+  cursor: wait;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.gradient-bg {
+  background: linear-gradient(to right, #30cfd0, #8145ff);
+}
+.cursor {
+  border-radius: 50%;
+  border: 2px solid;
+  transition: all 0.25s ease-out;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%)
+}
+
+.cursor2 {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  z-index: 9999;
+  transform: translate(-50%, -50%)
+}
+
+.hover,
+.cursorinnerhover {
+  opacity: 1;
+  width: 70px;
+  height: 70px;
+}
+
+.logos{
+  position: relative;
+}
+
+.logos::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(to right,rgba(255,255,255,0),#E6E6E6);
+  content: "";
+  z-index: 2;
+}
+
+.logos::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(to left,rgba(255,255,255,0),#E6E6E6);
+  content: "";
+  z-index: 2;
+}
+.darklogos::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  /* background: linear-gradient(to right,red,red); */
+  content: "";
+  z-index: 2;
+}
+
+.darklogos::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  /* background: linear-gradient(to left,#E6E6E6,#E6E6E6); */
+  content: "";
+  z-index: 2;
+}
+.ease-custom{
+  transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+}
+.project:last-of-type{
+  border-bottom: 1px solid rgba(201, 201, 201, 0);
+}
+.project:hover h2{
+  transform: translateX(-10px);
+}
+
+.project:hover p{
+  transform: translateX(10px);
+}
+
+
+
+
+
