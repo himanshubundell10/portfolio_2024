@@ -28,7 +28,7 @@ const Home = () => {
     <header
       id="Home"
       style={{ height: "calc(100vh - 5rem)" }}
-      className="flex-col sm:flex-row gap-10 sm:gap-20 flex items-center justify-center w-full sm:w-[84vw] m-auto relative  "
+      className="flex-col sm:flex-row gap-3 sm:gap-20 flex items-center justify-center w-full sm:w-[84vw] m-auto relative  "
     >
       {/* home container */}
       <div className="sm:w-1/2 w-[80%] h-fit">
@@ -40,13 +40,13 @@ const Home = () => {
         >
           <motion.h2
             variants={animation}
-            className="font-bold text-2xl lg:text-3xl pt-4 sm:pt-0 dark:text-white"
+            className="font-bold text-[25px] sm:text-2xl lg:text-3xl  dark:text-white"
           >
             Hello, it's me
           </motion.h2>
           <motion.h1
             variants={animation}
-            className="lg:text-7xl text-6xl font-bold dark:text-white"
+            className="lg:text-7xl sm:text-6xl  text-[44px] font-bold dark:text-white"
           >
             Himanshu
           </motion.h1>
@@ -81,12 +81,12 @@ const Home = () => {
       </div>
 
       {/* profile container */}
-      <div className="w-1/2  h-fit flex justify-center items-center">
+      <div className="sm:w-1/2 w-full  h-fit flex justify-center items-center">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 2.6 }}
-          className="object-cover overflow-hidden rounded-full w-[36vw] h-[36vw]  lg:w-[32vw] lg:h-[32vw] "
+          className="object-cover overflow-hidden rounded-full w-[250px] h-[250px] sm:w-[40vw] sm:h-[40vw]  lg:w-[34vw] lg:h-[34vw] xl:w-[500px] xl:h-[500px] "
         >
           <img
             className="object-cover rounded-full w-full h-full"
@@ -103,7 +103,7 @@ const Home = () => {
             onMouseEnter={() => dispatch(setIsHover(true))}
             onMouseLeave={() => dispatch(setIsHover(false))}
             className="text-inherit"
-            href=""
+            href="https://github.com/himanshubundell10"
           >
             <GithubIcon />
           </a>
@@ -111,7 +111,7 @@ const Home = () => {
             onMouseEnter={() => dispatch(setIsHover(true))}
             onMouseLeave={() => dispatch(setIsHover(false))}
             className="text-inherit"
-            href=""
+            href="https://www.linkedin.com/in/himanshubundel10/"
           >
             <Linkedin02Icon />
           </a>
@@ -119,7 +119,7 @@ const Home = () => {
             onMouseEnter={() => dispatch(setIsHover(true))}
             onMouseLeave={() => dispatch(setIsHover(false))}
             className="text-inherit"
-            href=""
+            href="https://www.instagram.com/himanshubundell/"
           >
             <InstagramIcon />
           </a>

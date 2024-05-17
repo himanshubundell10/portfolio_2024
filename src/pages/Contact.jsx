@@ -71,7 +71,7 @@ const Contact = () => {
                     placeholder="Write Message..."
                   />
                 </div>
-                <Button
+                {/* <Button
                   style={{
                     position: "relative",
                     marginTop: "1rem",
@@ -83,14 +83,14 @@ const Contact = () => {
                     alignItems: "center",
                     border: "none",
                   }}
-                >
-                  <p className="z-10">
+                > */}
+                  <button type="submit" className="z-10 bg-black text-white rounded-md flex items-center justify-center gap-1">
                     Send{" "}
                     <span className="text-red-500 text-2xl font-bold transition-transform duration-500  ">
                       .
                     </span>
-                  </p>
-                </Button>
+                  </button>
+                {/* </Button> */}
               </form>
             </div>
           </div>

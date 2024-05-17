@@ -1,10 +1,12 @@
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
 import Button from "../component/Button";
+import resume from "/Himanshu_Resume.pdf"
 
 const About = () => {
   const container = useRef(null);
   const isInView = useInView(container);
+  
 
   const opacity = {
     initial: {
@@ -38,6 +40,7 @@ const About = () => {
   const paras2 =
     "Hello, i'm Himanshu Bundel a versatile Full Stack Developer with a passion for crafting clean web applications and intuitive functionalities. I thrive on continually eager to learn new skills and tools. While my experience primarily lies in solo full stack projects, I'm poised to embrace collaborative environments, adept in daily stand-ups, source control, and project management. Equipped with expertise across the full stack, I bring a comprehensive skill set to every project, ensuring robust solutions from front-end design to back-end implementation.";
 
+    
   return (
     <section
       id="About"
@@ -135,7 +138,7 @@ const About = () => {
                 alignItems: "center",
               }}
             >
-              <p className="z-10 text-xs p-1 text-center">Download CV</p>
+              <a href={resume} download={resume} className="z-10 text-xs p-1 text-center">Download Resume</a>
             </Button>
           </motion.div>
         </div>
