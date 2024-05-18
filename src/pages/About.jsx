@@ -6,7 +6,7 @@ import resume from "/Himanshu_Resume.pdf"
 const About = () => {
   const container = useRef(null);
   const isInView = useInView(container);
-  
+
 
   const opacity = {
     initial: {

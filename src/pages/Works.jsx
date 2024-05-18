@@ -11,9 +11,9 @@ import Project from "../component/Project";
 const Works = () => {
   const projects = [
     { title: "Chatease", color: "#B4B4B8  ", src: chatapp },
-    { title: "Spotigy", color: "#000000", src: spotifyclone },
-    { title: "Dashboard", color: "#EADBC8", src: admindashboard },
-    { title: "Ecommerce", color: "#706D63", src: ecommerce },
+    { title: "Spotify Clone", color: "#000000", src: spotifyclone },
+    { title: "Admin Dashboard", color: "#EADBC8", src: admindashboard },
+    { title: "Ecommerce Store", color: "#706D63", src: ecommerce },
     { title: "PassManger", color: "#eeeeee", src: passmanager },
     { title: "Todo", color: "#606470", src: todo },
   ];
