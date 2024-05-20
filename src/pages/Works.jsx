@@ -10,12 +10,12 @@ import Project from "../component/Project";
 
 const Works = () => {
   const projects = [
-    { title: "Chatease", color: "#B4B4B8  ", src: chatapp },
-    { title: "Spotify Clone", color: "#000000", src: spotifyclone },
-    { title: "Admin Dashboard", color: "#EADBC8", src: admindashboard },
-    { title: "Ecommerce Store", color: "#706D63", src: ecommerce },
-    { title: "PassManger", color: "#eeeeee", src: passmanager },
-    { title: "Todo", color: "#606470", src: todo },
+    { title: "Chatease", color: "#B4B4B8  ", src: chatapp ,a:"https://chatapp-frontend-three-iota.vercel.app/login"},
+    { title: "Spotify Clone", color: "#000000", src: spotifyclone ,a:"https://spoyify-clone.vercel.app/"},
+    { title: "Admin Dashboard", color: "#EADBC8", src: admindashboard ,a:"https://react-admin-dashboard-ts-ecru.vercel.app/"},
+    { title: "Ecommerce Store", color: "#706D63", src: ecommerce ,a:"https://mern-ecommerce-frontend-2024-rho.vercel.app/"},
+    { title: "PassManger", color: "#eeeeee", src: passmanager ,a:"https://pass-manager-vert.vercel.app/"},
+    { title: "Todo", color: "#606470", src: todo ,a:"https://react-todo-app-kappa-ivory.vercel.app/login"},
   ];
   const [modal, setModal] = useState({ active: false, index: 0 });
 
@@ -40,6 +40,7 @@ const Works = () => {
                   key={index}
                   index={index}
                   title={project.title}
+                  a={project.a}
                   setModal={setModal}
                 />
               );

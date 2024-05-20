@@ -1,9 +1,11 @@
 import React from "react";
 
-const Project = ({ title, index, setModal }) => {
+const Project = ({ title, index, setModal,a }) => {
   return (
     <>
-      <div
+      <a
+      href={a} target="_blank"
+      
         onMouseEnter={() => {
           setModal({ active: true, index });
         }}
@@ -19,7 +21,7 @@ const Project = ({ title, index, setModal }) => {
         <p className="duration-[0.4s] font-normal text-end dark:text-[#9e9e9e]">
           Design & Development
         </p>
-      </div>
+      </a>
     </>
   );
 };
